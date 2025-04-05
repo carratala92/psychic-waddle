@@ -1,0 +1,49 @@
+/* Profile container for Wolvden */
+.profile-container {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  /* Create an animated rainbow background */
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 200% 100%;
+  animation: rainbow-animation 5s linear infinite;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: style for a profile picture */
+.profile-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+}
+
+/* Optional: style for the profile name */
+.profile-container .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Optional: style for profile details */
+.profile-container .details {
+  font-size: 1rem;
+}
+
+/* Keyframes for rainbow animation */
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
